@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola, te amo mucho.</title>
+    <style>
+        .body {
+            background-color: rgb(134, 63, 77);
+            text-align: center;
+        }
+
+        .body_tittle {
+            color: white;
+        }
+
+        .body_img {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body_tittle">Me enamoro cada día más de ti, sí pq. ¿Aceptas estar conmigo 4ever?</h1>
+    <img 
+        src="https://i.postimg.cc/rsqVyYZx/3meses.jpg" alt="Fotito nuestra" class="body_img">
+    <button id="si">💓 Sisas miamor, ilysm 💓</button>
+    <button id="no">Nao, jódete 🤬</button>
+
+<script>
+    const vutonSi = document.getElementById('si');
+    const vutonNo = document.getElementById('no');
+
+    const GraciasPorHaberLlegadoAMivida = () => {
+        alert('Besos en tus nalgas 💖');
+        alert('Besos en tus chichis 💖');
+        alert('Besos en toda tu carita preciosa 💖');
+        alert('Gracias por haber llegado a mi vida, eres mi sueño hecho realidad 💖');
+        location.href = 'https://www.youtube.com/watch?v=PFe1JTJHNms'
+    };
+
+    const NoRompasMiCorazon = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+        vutonNo.style.left = (Math.random() * window.innerWidht) + 'px';
+};
+
+vutonSi.addEventListener('click', GraciasPorHaberLlegadoAMivida);
+vutonNo.addEventListener('mouseover', NoRompasMiCorazon);
+</script>
+
+</body>
+
+
+</html>
